@@ -34,7 +34,7 @@ class MyGridView extends StatelessWidget {
                           color: Colors.white),
                     ),
                     onTap: (){
-                      context.read<GridItemProvider>().clickBtn(index);
+                      context.read<GridItemProvider>().clickBtn(context, index);
                     },
                 )
                 : AnimatedContainer(
