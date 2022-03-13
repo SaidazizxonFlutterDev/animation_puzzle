@@ -13,8 +13,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<String> myList = [
-    "0","18","2","3","4","5","6","7","8","9","10","11","12","13","14","15"];
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Expanded(
-              child: MyGridView(myList: myList),
+              child: MyGridView(),
             ),
-            MyButton(myList: myList),
+            MyButton(),
           ],
         ),
       ),

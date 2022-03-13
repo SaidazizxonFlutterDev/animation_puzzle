@@ -1,3 +1,4 @@
+import 'package:animation_puzzle/provider/grid_item_provider.dart';
 import 'package:animation_puzzle/provider/signIn_ff_provider.dart';
 import 'package:animation_puzzle/route/my_route.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +9,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => VisibilityPasswordProvider()),
+        ChangeNotifierProvider(create: (_) => GridItemProvider()),
       ],
       child: const MyApp(),
     ),
