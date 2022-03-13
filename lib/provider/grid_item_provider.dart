@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 class GridItemProvider extends ChangeNotifier {
   List myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0, 13, 14, 15];
-  List result = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0];
 
   void clickBtn(BuildContext context, int index,) {
     if (index - 1 >= 0 && myList[index - 1] == 0 && index % 4 != 0 ||
@@ -44,4 +43,11 @@ class GridItemProvider extends ChangeNotifier {
       ).show();
     }
   }
+
+  void shuffleList(){
+    myList.shuffle();
+    notifyListeners();
+  }
+
+  get getList => myList;
 }

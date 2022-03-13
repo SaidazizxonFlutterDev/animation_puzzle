@@ -6,8 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class MyGridView extends StatelessWidget {
-
-  MyGridView({Key? key,}) : super(key: key);
+  MyGridView({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class MyGridView extends StatelessWidget {
           itemBuilder: (context, index) {
             return myList[index] != 0
                 ? GestureDetector(
-                  child: AnimatedContainer(
+                    child: AnimatedContainer(
                       duration: const Duration(milliseconds: 600),
                       color: ColorConst.primary,
                       alignment: Alignment.center,
@@ -33,10 +34,10 @@ class MyGridView extends StatelessWidget {
                           size: MyFontSize.normal,
                           color: Colors.white),
                     ),
-                    onTap: (){
+                    onTap: () {
                       context.read<GridItemProvider>().clickBtn(context, index);
                     },
-                )
+                  )
                 : AnimatedContainer(
                     duration: const Duration(milliseconds: 600),
                     color: ColorConst.invisible,
