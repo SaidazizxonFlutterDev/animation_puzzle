@@ -18,6 +18,7 @@ class MyText extends StatelessWidget {
         color: color,
         fontWeight: weight,
         overflow: overflow,
+        decoration: TextDecoration.none,
       ),
     );
   }
