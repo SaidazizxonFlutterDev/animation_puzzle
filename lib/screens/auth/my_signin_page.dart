@@ -10,7 +10,7 @@ class MySingInPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double _w = MediaQuery.of(context).size.width;
+    // double _w = MediaQuery.of(context).size.width;
     double _h = MediaQuery.of(context).size.height;
 
     return Scaffold(

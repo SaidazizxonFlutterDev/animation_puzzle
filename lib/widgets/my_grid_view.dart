@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class MyGridView extends StatelessWidget {
+  // ignore: prefer_const_constructors_in_immutables
   MyGridView({
     Key? key,
   }) : super(key: key);

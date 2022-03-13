@@ -2,8 +2,9 @@ import 'package:animation_puzzle/core/components/form_field_decoration.dart';
 import 'package:animation_puzzle/core/constants/my_form_border.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:animation_puzzle/provider/signIn_ff_provider.dart';
+import 'package:animation_puzzle/provider/signin_ff_provider.dart';
 
+// ignore: must_be_immutable
 class MyFormField extends StatelessWidget {
   bool isEmail;
   MyFormField({Key? key, required this.isEmail}) : super(key: key);

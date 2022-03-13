@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 class RouterGenerator {
   static generateRoute(RouteSettings settings) {
+    // ignore: unused_local_variable
     var args = settings.arguments;
 
     switch (settings.name) {
