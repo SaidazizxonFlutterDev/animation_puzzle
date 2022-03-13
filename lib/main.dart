@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/signIn',
+      initialRoute: '/home',
       onGenerateRoute: (settings) => RouterGenerator.generateRoute(settings),
     );
   }

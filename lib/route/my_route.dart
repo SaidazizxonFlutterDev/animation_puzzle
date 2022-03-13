@@ -5,32 +5,29 @@ import 'package:animation_puzzle/screens/my_home_page.dart';
 import 'package:flutter/material.dart';
 
 class RouterGenerator {
-  static generateRoute (RouteSettings settings){
+  static generateRoute(RouteSettings settings) {
     var args = settings.arguments;
 
     switch (settings.name) {
-
       case '/home':
         return MaterialPageRoute(
           builder: (context) => const MyHomePage(),
         );
 
-        case '/signIn':
+      case '/signIn':
         return MaterialPageRoute(
           builder: (context) => const SignInPage(),
         );
 
-        case '/signUp':
+      case '/signUp':
         return MaterialPageRoute(
           builder: (context) => const SignUpPage(),
         );
 
-        case '/resetP':
+      case '/resetP':
         return MaterialPageRoute(
           builder: (context) => const ResetPasswordPage(),
         );
-       
-      default:
     }
   }
 }

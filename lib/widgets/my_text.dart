@@ -7,18 +7,18 @@ class MyText extends StatelessWidget {
   Color? color;
   FontWeight? weight;
   TextOverflow? overflow;
-  MyText({ Key? key, required this.txt, required this.size, this.color, this.weight, this.overflow}) : super(key: key);
+  MyText({Key? key, required this.txt, required this.size, this.color, this.weight, this.overflow}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      txt, 
+      txt,
       style: TextStyle(
-        fontSize: size, 
+        fontSize: size,
         color: color,
         fontWeight: weight,
         overflow: overflow,
-        ),
+      ),
     );
   }
 }
